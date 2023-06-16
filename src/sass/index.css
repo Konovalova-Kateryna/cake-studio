@@ -1,0 +1,72 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+html {
+  scroll-behavior: smooth;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+}
+
+.container {
+  max-width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1280px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --primary-text:#121313;
+  --secondary-text:#FFFEFC;
+  --accent-text:#78807F;
+  --red-icon:#F42808;
+  --primary-bg:#FFFEFC;
+  --secondary-bg:#F4E1A9;
+  --blue-bg:#9BCDCA;
+  --pink-bg: #EFBCB7;
+  --black-bg: #121313;
+  --red-bg: #F42808;
+}/*# sourceMappingURL=index.css.map */
