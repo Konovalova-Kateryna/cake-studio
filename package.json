@@ -2,7 +2,7 @@
   "name": "cake-studio",
   "version": "2.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "homepage": "https://Konovalova-Kateryna.github.io/cake-studio",
   "scripts": {
     "start": "parcel src/*.html",
