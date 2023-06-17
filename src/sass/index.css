@@ -26,6 +26,12 @@ ul {
   margin: 0;
 }
 
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -77,6 +83,28 @@ body.modal-open {
   height: 200px;
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: var(--blue-bg);
+  padding-left: 80px;
+  padding-right: 80px;
   text-align: center;
+  display: flex;
+  border-bottom: 1px solid black;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__icon-list {
+  display: flex;
+  gap: 24px;
+}
+
+.header-icon {
+  fill: none;
+}
+
+.hero {
+  padding-top: 200px;
 }/*# sourceMappingURL=index.css.map */
