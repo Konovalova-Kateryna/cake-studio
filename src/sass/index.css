@@ -109,12 +109,15 @@ body.modal-open {
 }
 
 .footer {
+  background-color: var(--black-bg);
+  color: var(--secondary-text);
+}
+
+.footer-container {
   display: flex;
   height: 270px;
-  background-color: var(--black-bg);
   padding-left: 228px;
   padding-top: 1px;
-  color: var(--secondary-text);
 }
 
 .footer__contacts-section {
