@@ -1,0 +1,68 @@
+.footer {
+    display: flex;
+    height: 270px;
+    background-color: var(--black-bg);
+    padding-left: 228px;
+    // padding-right: 228px;
+    padding-top: 1px;
+    
+    color: var(--secondary-text)
+};
+.footer__contacts-section{
+    display: flex;
+    align-items: flex-start;
+    padding-top: 84px;
+    font-family: 'Segoe Print';
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}
+.footer-logo {
+    width: 222px;
+    background-color:var(--primary-bg);
+    padding-top: 49px;
+    padding-bottom: 49px;
+    padding-left: 9px;
+    padding-right: 9px;
+}
+
+.footer__link-section{
+margin-left: 224px;
+text-transform: uppercase ;
+}
+.footer__link-list{
+    margin-bottom: 24px;
+}
+.footer__link-item{
+    margin-bottom: 24px;
+    
+}
+.footer__phone-section{
+    margin-left:206px;
+}
+.footer__phone-title{
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 40px;
+        line-height: 17px;
+        letter-spacing: 1.5px;
+         text-transform: uppercase;
+}
+.footer__phone-item{
+    font-family: 'Roboto';
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: lowercase;
+        margin-bottom: 8px;
+        
+}
+
+.footer__social-section{
+    margin-left: 253px;
+}
+
+.footer__social-list{
+    display: flex;
+    gap: 24px;
+}
