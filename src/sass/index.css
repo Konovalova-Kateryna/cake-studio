@@ -54,8 +54,8 @@ body.modal-open {
 
 .container {
   max-width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 85px;
+  padding-right: 85px;
   margin-left: auto;
   margin-right: auto;
   width: 1920px;
@@ -102,10 +102,62 @@ body.modal-open {
 
 .header-icon {
   fill: none;
+  stroke: #121313;
+}
+.header-icon:hover, .header-icon:focus {
+  fill: var(--red-icon);
 }
 
 .hero {
-  padding-top: 200px;
+  padding-top: 424px;
+  padding-left: 458px;
+  padding-right: 468px;
+  height: 866px;
+  background-image: url(../images/macaroons-min.jpg);
+  background-repeat: no-repeat;
+  background-position: 1130 263;
+  background-size: 320px 530px;
+}
+
+.hero__title {
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 200px;
+  line-height: 200px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+.hero__title-end {
+  color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke: 3px black;
+}
+
+.hero__text {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 42px;
+  text-transform: lowercase;
+  margin-top: 35px;
+}
+
+.hero__btn {
+  width: 189px;
+  height: 48px;
+  border: 2px solid var(--black-bg);
+  padding: 14px 40px;
+  font-family: "Segoe Print";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+.hero__btn:hover, .hero__btn:focus {
+  background-color: var(--accent-text);
+  color: var(--secondary-text);
 }
 
 .footer {

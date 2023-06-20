@@ -27,8 +27,13 @@
 }
 .header-icon{
   fill: none;
+stroke:#121313;
+
+  &:hover, &:focus{
+    fill: var(--red-icon);
+  }
     
 }
 .header__button{
-    
+
 }
