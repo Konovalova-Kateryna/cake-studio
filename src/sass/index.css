@@ -86,7 +86,6 @@ body.modal-open {
   padding-right: 80px;
   text-align: center;
   display: flex;
-  border-bottom: 1px solid black;
 }
 
 .header__container {
