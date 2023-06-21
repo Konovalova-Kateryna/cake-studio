@@ -1,0 +1,47 @@
+.surprise{
+    height: 1190px;
+    border-top: 2px solid var(--black-bg);
+    position: relative;
+    background-image: url(../images/CakeBox-min.jpg);
+    background-repeat: no-repeat;
+    background-position: 145 100;
+    background-size: 860px 890px;
+    z-index: 2;
+}
+
+.surprise__title{
+font-size: 48px;
+    font-family: Roboto;
+    font-weight: 900;
+    line-height: 120%;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    text-align: center;
+    background-color: var(--black-bg);
+    color: var(--secondary-text);
+
+}
+.surprise__card{
+    margin-top: 356px;
+    background-color: var(--blue-bg);
+    padding-left: 1115px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 378px;
+    z-index: 1;
+}
+
+.surprise__subtitle{
+    font-size: 32px;
+        font-family: Segoe Print;
+        font-weight: 700;
+        line-height: 120%;
+}
+
+.surprise__text{
+    font-size: 24px;
+        font-family: Roboto;
+        line-height: 120%;
+        letter-spacing: 0.48px;
+}
