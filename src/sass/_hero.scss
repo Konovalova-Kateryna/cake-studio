@@ -30,20 +30,3 @@ color: rgba(0,0,0,0);
     text-transform: lowercase;
     margin-top: 35px;
 }
-.hero__btn{
-width: 189px;
-height: 48px;
-border: 2px solid var(--black-bg);
-padding: 14px 40px;
-font-family: 'Segoe Print';
-font-weight: 400;
-font-size: 20px;
-line-height: 20px;
-letter-spacing: 1.75px;
-text-transform: uppercase;
-margin-top: 40px;
-&:hover, &:focus{
-    background-color: var(--accent-text);
-    color: var(--secondary-text);
-}
-}

@@ -28,6 +28,7 @@
 .header-icon{
   fill: none;
 stroke:#121313;
+transition: $transition-value;
 
   &:hover, &:focus{
     fill: var(--red-icon);
