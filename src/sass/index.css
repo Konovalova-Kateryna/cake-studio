@@ -101,10 +101,11 @@ body.modal-open {
 
 .header-icon {
   fill: none;
-  stroke: #121313;
+  stroke: var(--primary-text);
 }
 .header-icon:hover, .header-icon:focus {
   fill: var(--red-icon);
+  stroke: var(--primary-text);
 }
 
 .hero {
@@ -157,6 +158,45 @@ body.modal-open {
 .hero__btn:hover, .hero__btn:focus {
   background-color: var(--accent-text);
   color: var(--secondary-text);
+}
+
+.assortment {
+  border-top: 2px solid var(--black-bg);
+  text-align: center;
+}
+
+.assortment__title {
+  display: inline-block;
+  padding: 20px 60px;
+  font-size: 48px;
+  font-family: Roboto;
+  font-weight: 900;
+  line-height: 120%;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  background-color: var(--black-bg);
+  color: var(--secondary-text);
+}
+
+.assortment__btn-list {
+  text-align: start;
+}
+
+.assortment__btn:hover, .assortment__btn:focus {
+  background-color: var(--blue-bg);
+}
+
+.assortment__btn-icon {
+  fill: none;
+  stroke: var(--primary-text);
+}
+
+.assortment__card {
+  display: flex;
+}
+
+.assortment__trend {
+  display: flex;
 }
 
 .footer {

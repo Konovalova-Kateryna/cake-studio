@@ -27,10 +27,11 @@
 }
 .header-icon{
   fill: none;
-stroke:#121313;
+stroke:var(--primary-text);
 
   &:hover, &:focus{
     fill: var(--red-icon);
+    stroke: var(--primary-text);
   }
     
 }
