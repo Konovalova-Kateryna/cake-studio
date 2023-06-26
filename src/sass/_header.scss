@@ -27,11 +27,12 @@
 }
 .header-icon{
   fill: none;
-stroke:#121313;
+stroke:var(--primary-text);
 transition: $transition-value;
 
   &:hover, &:focus{
     fill: var(--red-icon);
+    stroke: var(--primary-text);
   }
     
 }
