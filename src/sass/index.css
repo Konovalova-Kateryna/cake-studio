@@ -31,6 +31,10 @@ button {
   cursor: pointer;
 }
 
+svg {
+  fill: none;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -78,7 +82,6 @@ body.modal-open {
   width: 189px;
   height: 48px;
   border: 2px solid var(--black-bg);
-  padding: 14px 40px;
   font-family: "Segoe Print";
   font-weight: 400;
   font-size: 20px;
@@ -90,6 +93,19 @@ body.modal-open {
 }
 .btn:hover, .btn:focus {
   background-color: var(--accent-text);
+  color: var(--secondary-text);
+}
+
+.title {
+  display: inline-block;
+  padding: 20px 60px;
+  font-size: 48px;
+  font-family: Roboto;
+  font-weight: 900;
+  line-height: 120%;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  background-color: var(--black-bg);
   color: var(--secondary-text);
 }
 
@@ -162,48 +178,22 @@ body.modal-open {
   margin-top: 35px;
 }
 
-.surprise {
-  height: 1190px;
-  border-top: 2px solid var(--black-bg);
-  text-align: center;
-}
-
-.surprise__title {
-  display: inline-block;
-  padding: 20px 60px;
-  font-size: 48px;
-  font-family: Roboto;
-  font-weight: 900;
-  line-height: 120%;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  background-color: var(--black-bg);
-  color: var(--secondary-text);
-}
-
-
 .assortment {
   border-top: 2px solid var(--black-bg);
   text-align: center;
 }
 
 .assortment__title {
-  display: inline-block;
-  padding: 20px 60px;
-  font-size: 48px;
-  font-family: Roboto;
-  font-weight: 900;
-  line-height: 120%;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  background-color: var(--black-bg);
-  color: var(--secondary-text);
+  margin-bottom: 100px;
 }
 
 .assortment__btn-list {
   text-align: start;
 }
 
+.assortment__btn {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .assortment__btn:hover, .assortment__btn:focus {
   background-color: var(--blue-bg);
 }
@@ -215,10 +205,133 @@ body.modal-open {
 
 .assortment__card {
   display: flex;
+  align-items: start;
+  text-align: start;
+  gap: 230px;
 }
 
 .assortment__trend {
   display: flex;
+  align-items: center;
+  margin-bottom: 140px;
+}
+
+.assortment__trend-description {
+  width: 435px;
+}
+
+.assortment__trend-title {
+  font-size: 25px;
+  font-family: Segoe Print;
+  font-weight: 700;
+  line-height: 120%;
+  text-align: start;
+}
+
+.assortment__trend-descr {
+  font-size: 20px;
+  font-family: Roboto;
+  line-height: 120%;
+  letter-spacing: 0.4px;
+  margin-top: 50px;
+}
+
+.assortment__trend-price {
+  position: relative;
+  font-size: 25px;
+  font-family: Segoe Print;
+  font-weight: 700;
+  line-height: 120%;
+  margin-top: 80px;
+}
+.assortment__trend-price::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  border: 2px solid var(--primary-text);
+  width: 65px;
+}
+
+.assortment__descr-btn {
+  width: 214px;
+  margin-top: 0;
+}
+
+.assortment__trend-icon {
+  stroke: var(--primary-text);
+}
+
+.assortment__trend-descr {
+  position: relative;
+}
+
+.assortment__trend-img {
+  margin-left: 200px;
+  width: 430px;
+  height: 495px;
+}
+
+.assortment__img-bg {
+  position: relative;
+}
+.assortment__img-bg::after {
+  content: "";
+  width: 50vw;
+  display: block;
+  height: 190px;
+  position: absolute;
+  top: 340px;
+  left: 79px;
+  background-color: var(--secondary-bg);
+  z-index: -1;
+}
+
+.assortment__product-list {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.assortment__product-item {
+  width: calc((100% - 340px) / 3);
+  padding: 80px 45px;
+  text-align: start;
+}
+.assortment__product-item:nth-child(3n+1) {
+  background-color: var(--secondary-bg);
+}
+.assortment__product-item:nth-child(3n+2) {
+  background-color: var(--blue-bg);
+}
+.assortment__product-item:nth-child(3n+3) {
+  background-color: var(--pink-bg);
+}
+
+.assortment__product-img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list-arrow {
+  stroke: var(--primary-text);
+}
+
+.assortment__btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.slick-slider {
+  display: flex;
+  width: 100%;
+}
+
+.surprise {
+  height: 1190px;
+  border-top: 2px solid var(--black-bg);
+  text-align: center;
+}
 
 .surprise__card-background {
   height: 378px;
@@ -260,7 +373,6 @@ body.modal-open {
   line-height: 120%;
   letter-spacing: 0.48px;
   margin-top: 20px;
-
 }
 
 .footer {
