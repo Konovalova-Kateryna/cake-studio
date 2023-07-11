@@ -15,6 +15,10 @@
    transition: $transition-value;
     &:hover, &:focus{
         background-color: var(--blue-bg);
+
+    }
+    &.current{
+        background-color: var(--blue-bg);
     }
 };
 
