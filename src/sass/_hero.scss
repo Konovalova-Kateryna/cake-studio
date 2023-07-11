@@ -1,7 +1,7 @@
 .hero{
-    padding-top: 424px;
-    padding-left: 458px;
-    padding-right: 468px;
+padding-top: 63px;
+padding-left: 0;
+padding-right: 0;
 height: 866px;
 background-image: url(../images/macaroons-min.jpg);
 background-repeat: no-repeat;
@@ -9,13 +9,15 @@ background-position: 1130 263;
 background-size: 320px 530px
 }
 .hero__title{
-    font-family: 'Roboto';       
-        font-weight: 900;
-        font-size: 200px;
-        line-height: 200px;
-        letter-spacing: 10px;
-        text-transform: uppercase;
-}
+display: inline-block;
+font-family: 'Roboto';       
+font-weight: 900;
+font-size: 200px;
+line-height: 200px;
+letter-spacing: 10px;
+text-transform: uppercase;
+};
+
 .hero__title-end{
 color: rgba(0,0,0,0);
 -webkit-text-stroke: 3px black;
@@ -23,10 +25,10 @@ color: rgba(0,0,0,0);
 
 
 .hero__text{
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 35px;
-    line-height: 42px;
-    text-transform: lowercase;
-    margin-top: 35px;
+font-family: 'Roboto';
+font-weight: 400;
+font-size: 35px;
+line-height: 42px;
+text-transform: lowercase;
+margin-top: 35px;
 }
