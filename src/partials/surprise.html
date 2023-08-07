@@ -3,7 +3,19 @@
   <div class="surprise__card-background">
     <div class="container">
       <div class="surprise__card">
-        <img class="surprise__img" src="./images/Cake-box.png" alt="Cake box" />
+        <picture class="surprise__img">
+          <source srcset="./images/Cake-box.png" media="(min-width:1920px)" />
+          <source
+            srcset="./images/Cake-box_mob.png"
+            media="(min-width:360px)"
+          />
+          <img
+            class="surprise__img"
+            src="./images/Cake-box.png"
+            alt="Cake box"
+          />
+        </picture>
+
         <div class="surprise__cart-content">
           <h3 class="surprise__subtitle">
             Формуй подарунковий бокс за власним смаком
@@ -13,7 +25,7 @@
             Ти маєш можливість персоналізувати набори з тістечками згідно із
             своїми бажаннями та потребами.
           </p>
-          <button class="btn">Обирай</button>
+          <button class="btn surprise__btn">Обирай</button>
         </div>
       </div>
     </div>
