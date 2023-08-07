@@ -5,42 +5,31 @@
       <ul class="assortment__btn-list">
         <li>
           <button class="assortment__btn">
-            <svg class="assortment__btn-icon" width="120" height="120">
+            <svg class="assortment__btn-icon">
               <use href="./images/symbol-defs.svg#icon-makaroon"></use>
             </svg>
+            <p class="assortment__btn-title">макаронси</p>
           </button>
         </li>
         <li>
           <button class="assortment__btn">
-            <svg class="assortment__btn-icon" width="120" height="120">
+            <svg class="assortment__btn-icon">
               <use href="./images/symbol-defs.svg#icon-donut"></use>
             </svg>
+            <p class="assortment__btn-title">пончики</p>
           </button>
         </li>
         <li>
           <button class="assortment__btn current">
-            <svg class="assortment__btn-icon" width="120" height="120">
+            <svg class="assortment__btn-icon">
               <use href="./images/symbol-defs.svg#icon-cupcake"></use>
             </svg>
+            <p class="assortment__btn-title">капкейки</p>
           </button>
         </li>
       </ul>
 
       <div class="assortment__trend">
-        <div class="assortment__trend-description">
-          <h3 class="assortment__trend-title">Капкейк з трюфелем та малиною</h3>
-          <p class="assortment__trend-descr">
-            Шоколадний бісквіт з начинкою з трюфеля, обгорнутий кремом з малини,
-            що додає свіжості, створює дуже розкішний і смачний десерт.
-          </p>
-          <h4 class="assortment__trend-price">62,00 грн</h4>
-          <div class="assortment__btns">
-            <button class="btn assortment__descr-btn">в кошик</button>
-            <svg class="assortment__trend-icon" width="48" height="48">
-              <use href="./images/symbol-defs.svg#icon-heart"></use>
-            </svg>
-          </div>
-        </div>
         <div class="assortment__img-bg">
           <img
             class="assortment__trend-img"
@@ -48,31 +37,56 @@
             alt="TruffleCake"
           />
         </div>
+
+        <div class="assortment__trend-description">
+          <h3 class="assortment__trend-title">Капкейк з трюфелем та малиною</h3>
+          <p class="assortment__trend-descr">
+            Шоколадний бісквіт з начинкою з трюфеля, обгорнутий кремом з малини,
+            що додає свіжості, створює дуже розкішний і смачний десерт.
+          </p>
+          <div class="assortment__btns">
+            <h4 class="assortment__trend-price">62,00 грн</h4>
+            <button class="assortment__btn-like">
+              <svg class="assortment__like-icon" width="48" height="48">
+                <use href="./images/symbol-defs.svg#icon-heart"></use>
+              </svg>
+            </button>
+            <button class="btn assortment__descr-btn">в кошик</button>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="assortment__product-list">
+    <div class="assortment__products">
       <button class="prev-btn" type="button">
         <svg class="list-arrow" width="48" height="48">
           <use href="./images/symbol-defs.svg#icon-arrow-left"></use>
         </svg>
       </button>
-      <div class="slider">
+      <div class="assortment__product-list">
         <div class="assortment__product-item">
           <img
             class="assortment__product-img"
             src="./images/BlackCake.png"
             alt="Isecream cupcake"
           />
-          <h3 class="assortment__trend-title">
+          <h3 class="product-title assortment__trend-title">
             Капкейк з морозивом та шоколадним соусом
           </h3>
-          <h4 class="assortment__trend-price">50 грн</h4>
-          <div class="assortment__btns">
-            <button class="btn assortment__descr-btn">в кошик</button>
-            <svg class="assortment__trend-icon" width="48" height="48">
+          <h4 class="product-price assortment__trend-price">50,00 грн</h4>
+
+          <button class="btn assortment__descr-btn product-choose">
+            в кошик
+          </button>
+          <button class="assortment__btn-like products-like">
+            <svg class="assortment__like-icon" width="48" height="48">
               <use href="./images/symbol-defs.svg#icon-heart"></use>
             </svg>
-          </div>
+          </button>
+          <button class="assortment__btn-like products-bag">
+            <svg class="assortment__like-icon" width="48" height="48">
+              <use href="./images/symbol-defs.svg#icon-bag"></use>
+            </svg>
+          </button>
         </div>
         <div class="assortment__product-item">
           <img
@@ -80,16 +94,24 @@
             src="./images/RedCake.png"
             alt="Raspberry cupcake"
           />
-          <h3 class="assortment__trend-title">
+          <h3 class="assortment__trend-title product-title">
             Малиновий капкейк з вершковим кремом
           </h3>
-          <h4 class="assortment__trend-price">55,00 грн</h4>
-          <div class="assortment__btns">
-            <button class="btn assortment__descr-btn">в кошик</button>
-            <svg class="assortment__trend-icon" width="48" height="48">
+          <h4 class="assortment__trend-price product-price">55,00 грн</h4>
+
+          <button class="btn assortment__descr-btn product-choose">
+            в кошик
+          </button>
+          <button class="assortment__btn-like products-like">
+            <svg class="assortment__like-icon" width="48" height="48">
               <use href="./images/symbol-defs.svg#icon-heart"></use>
             </svg>
-          </div>
+          </button>
+          <button class="assortment__btn-like products-bag">
+            <svg class="assortment__like-icon" width="48" height="48">
+              <use href="./images/symbol-defs.svg#icon-bag"></use>
+            </svg>
+          </button>
         </div>
         <div class="assortment__product-item">
           <img
@@ -97,35 +119,50 @@
             src="./images/YellowCake.png"
             alt="Lemon cupcake"
           />
-          <h3 class="assortment__trend-title">
+          <h3 class="assortment__trend-title product-title">
             Лимонний капкейк з мигдалевими стружками
           </h3>
-          <h4 class="assortment__trend-price">60,00 грн</h4>
-          <div class="assortment__btns">
-            <button class="btn assortment__descr-btn">в кошик</button>
-            <svg class="assortment__trend-icon" width="48" height="48">
+          <h4 class="assortment__trend-price product-price">60,00 грн</h4>
+          <button class="btn assortment__descr-btn product-choose">
+            в кошик
+          </button>
+          <button class="assortment__btn-like products-like">
+            <svg class="assortment__like-icon" width="48" height="48">
               <use href="./images/symbol-defs.svg#icon-heart"></use>
             </svg>
-          </div>
+          </button>
+          <button class="assortment__btn-like products-bag">
+            <svg class="assortment__like-icon" width="48" height="48">
+              <use href="./images/symbol-defs.svg#icon-bag"></use>
+            </svg>
+          </button>
         </div>
-        <div class="assortment__product-item">
+        <!-- <div class="assortment__product-item">
           <img
             class="assortment__product-img"
             src="./images/BlackCake.png"
             alt="Isecream cupcake"
           />
-          <h3 class="assortment__trend-title">
+          <h3 class="assortment__trend-title product-title">
             Капкейк з морозивом та шоколадним соусом
           </h3>
-          <h4 class="assortment__trend-price">50 грн</h4>
-          <div class="assortment__btns">
-            <button class="btn assortment__descr-btn">в кошик</button>
-            <svg class="assortment__trend-icon" width="48" height="48">
+          <h4 class="assortment__trend-price product-price">50 грн</h4>
+
+          <button class="btn assortment__descr-btn product-choose">
+            в кошик
+          </button>
+          <button class="assortment__btn-like products-like">
+            <svg class="assortment__like-icon" width="48" height="48">
               <use href="./images/symbol-defs.svg#icon-heart"></use>
             </svg>
-          </div>
+          </button>
+          <button class="assortment__btn-like products-bag">
+            <svg class="assortment__like-icon" width="48" height="48">
+              <use href="./images/symbol-defs.svg#icon-bag"></use>
+            </svg>
+          </button>
         </div>
-      </div>
+      </div> -->
       <button class="next-btn">
         <svg class="list-arrow" width="48" height="48">
           <use href="./images/symbol-defs.svg#icon-arrow-right"></use>
