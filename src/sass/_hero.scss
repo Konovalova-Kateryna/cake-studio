@@ -1,28 +1,22 @@
 .hero {
   padding-top: 40px;
-  padding-right: 20px;
-  padding-left: 20px;
   padding-bottom: 80px;
   text-align: center;
 
   background-image: url(../images/macaroons-mob.jpg);
   background-repeat: no-repeat;
 
-  background-position: top 43 center;
-//   background-size: contain;
+  background-position: top 65 center;
   background-size: 165px 300px;
 
   
   @media screen and (min-width: 1920px) {
-    width: 1920px;
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-bottom: 0;
-    
-    height: 866px;
+     padding-top: 65px;
+     padding-bottom: 0;
+     height: 866px;
     background-image: url(../images/macaroons-min.jpg);
     background-repeat: no-repeat;
-    background-position: 1130 63;
+    background-position: 1130 65;
     background-size: 320px 530px;
     text-align: center;
   }
@@ -30,8 +24,6 @@
 .hero__container{
     @media screen and (min-width: 1920px) {
         display: inline-block;
-        margin-left: auto;
-        margin-right: auto;
         text-align: start;
     }
 }
@@ -44,7 +36,7 @@
 
   letter-spacing: 5px;
   text-transform: uppercase;
-  margin-top: 310px;
+  margin-top: 340px;
 
   text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
@@ -58,6 +50,7 @@
     }
   }
   @media screen and (min-width: 1920px) {
+    margin-top: 140px;
     font-size: 200px;
     text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     // text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),

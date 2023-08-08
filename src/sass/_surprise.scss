@@ -1,24 +1,15 @@
-.surprise {
-    
+.surprise {    
   border-top: 2px solid var(--black-bg);
-  text-align: center;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 20px;
-  padding-right: 20px;
   height: 840px;
-  width: 360px;
-
-  @media screen and (min-width: 1920px) {
-    width: 1920px;
+  text-align: center;
+  @media screen and (min-width: 1920px) {    
     height: 1190px;
-    padding-left: 145px;
-    padding-right: 330px;
+   
   }
 }
 
 .surprise__title{
-    @media screen and (min-width: 1920px) {
+      @media screen and (min-width: 1920px) {
     margin-bottom: 100px;}
 }
 
@@ -27,8 +18,7 @@
   margin-top: 145px;
   height: 160px;
   background-color: var(--blue-bg);
-  text-align: center;
-  
+  text-align: center;  
 
   @media screen and (min-width: 1920px) {
     height: 378px;
@@ -39,13 +29,13 @@
 
 .surprise__card {
     position: absolute;
-    top: -85px;
-    
+    top: -85px;    
     text-align: center;
+    //  padding-left: 145px;
+    // padding-right: 330px;
     margin-right: auto;
   margin-left: auto;
-//   padding-top: 50px;
-//   padding-bottom: 50px;
+
   @media screen and (min-width: 1920px) {
     display: flex;
    align-items: center;
@@ -54,16 +44,13 @@
   }
 }
 
-// .surprise__img {
-//   @media screen and (min-width: 1920px) {
-   
-//   }
-// }
-
 .surprise__cart-content {
     text-align: start;
+    width: 320px;
+    
     @media screen and (min-width: 1920px){
   width: 480px;
+  padding-top: 45px;
   }
 }
 
@@ -71,12 +58,13 @@
     font-family: Segoe Print;
 font-size: 24px;
 font-weight: 700;
-line-height: 28px;
-
+line-height: 28.8px;
 
 @media screen and (min-width: 1920px){
   font-size: 32px;  
+  line-height: 38.4px;
 }}
+
 
 .surprise__text {
     font-family: Roboto;
@@ -85,13 +73,12 @@ font-style: normal;
 font-weight: 400;
 line-height: 19px; 
 letter-spacing: 0.32px;
-
 margin-top: 20px;
 margin-bottom:30px;
 
-
 @media screen and (min-width: 1920px){
   font-size: 24px;
+  line-height: 28.8px;
   letter-spacing: 0.48px;
   
 }}
