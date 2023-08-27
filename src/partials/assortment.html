@@ -29,7 +29,7 @@
         </li>
       </ul>
 
-      <div class="assortment__trend">
+      <div class="assortment__trend" >
         <div class="assortment__img-bg">
           <img
             class="assortment__trend-img"
@@ -56,14 +56,14 @@
         </div>
       </div>
     </div>
-    <div class="assortment__products">
-      <button class="prev-btn" type="button">
-        <svg class="list-arrow" width="48" height="48">
-          <use href="./images/symbol-defs.svg#icon-arrow-left"></use>
-        </svg>
-      </button>
-      <div class="assortment__product-list">
-        <div class="assortment__product-item">
+    <div class="assortment__products " id="assortment">
+    
+      <div class="assortment__product-list itc-slider" data-slider="itc-slider">
+       
+        <div class="itc-slider-wrapper">
+            
+          <div class="itc-slider-items">
+        <div class="assortment__product-item itc-slider-item">
           <img
             class="assortment__product-img"
             src="./images/BlackCake.png"
@@ -88,7 +88,7 @@
             </svg>
           </button>
         </div>
-        <div class="assortment__product-item">
+        <div class="assortment__product-item itc-slider-item">
           <img
             class="assortment__product-img"
             src="./images/RedCake.png"
@@ -113,7 +113,7 @@
             </svg>
           </button>
         </div>
-        <div class="assortment__product-item">
+        <div class="assortment__product-item itc-slider-item">
           <img
             class="assortment__product-img"
             src="./images/YellowCake.png"
@@ -137,16 +137,16 @@
             </svg>
           </button>
         </div>
-        <!-- <div class="assortment__product-item">
+        <div class="assortment__product-item itc-slider-item">
           <img
             class="assortment__product-img"
-            src="./images/BlackCake.png"
-            alt="Isecream cupcake"
+            src="./images/RedCake.png"
+            alt="Raspberry cupcake"
           />
           <h3 class="assortment__trend-title product-title">
-            Капкейк з морозивом та шоколадним соусом
+            Малиновий капкейк з вершковим кремом
           </h3>
-          <h4 class="assortment__trend-price product-price">50 грн</h4>
+          <h4 class="assortment__trend-price product-price">55,00 грн</h4>
 
           <button class="btn assortment__descr-btn product-choose">
             в кошик
@@ -162,12 +162,38 @@
             </svg>
           </button>
         </div>
-      </div> -->
-      <button class="next-btn">
-        <svg class="list-arrow" width="48" height="48">
-          <use href="./images/symbol-defs.svg#icon-arrow-right"></use>
-        </svg>
-      </button>
-    </div>
+        <div class="assortment__product-item itc-slider-item">
+          <img
+            class="assortment__product-img"
+            src="./images/YellowCake.png"
+            alt="Lemon cupcake"
+          />
+          <h3 class="assortment__trend-title product-title">
+            Лимонний капкейк з мигдалевими стружками
+          </h3>
+          <h4 class="assortment__trend-price product-price">60,00 грн</h4>
+          <button class="btn assortment__descr-btn product-choose">
+            в кошик
+          </button>
+          <button class="assortment__btn-like products-like">
+            <svg class="assortment__like-icon" width="48" height="48">
+              <use href="./images/symbol-defs.svg#icon-heart"></use>
+            </svg>
+          </button>
+          <button class="assortment__btn-like products-bag">
+            <svg class="assortment__like-icon" width="48" height="48">
+              <use href="./images/symbol-defs.svg#icon-bag"></use>
+            </svg>
+          </button>
+        </div>  
+        </div>
+      </div>
+       <button class="itc-slider-btn itc-slider-btn-prev"></button>
+       <button class="itc-slider-btn itc-slider-btn-next" ></button>
+      </div>
+     
+    
   </div>
+    
+
 </section>

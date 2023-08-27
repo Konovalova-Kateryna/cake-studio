@@ -213,15 +213,6 @@
 
 // Картки товарів - слайдер
 
-.prev-btn, .next-btn{
-  display: none;
-
-  @media screen and (min-width: 1920px) {
-    display: block;
-  }
-
-}
-
 .assortment__products {
   display: flex;
   margin-bottom: 100px;
@@ -233,6 +224,8 @@
   // overflow: hidden;
   @media screen and (min-width: 1920px) {
   width: 100%;
+  padding-left: 80px;
+  padding-right: 80px;
   }
 }
 .assortment__product-item {
@@ -253,8 +246,8 @@
   }
  
   @media screen and (min-width: 1920px) {
-    max-width: 100%;
-  // width: calc((100% - 88px*2 )/ 3);
+  width: calc(100% / 3);
+  max-width: 100%;
   padding: 80px 45px;
   text-align: start;
  
@@ -349,7 +342,45 @@
 
 
 // ---- slider
-.slick-slider {
-  display: flex;
+
+
+
+.itc-slider-item{
+  flex: 0 0 auto;
+  max-width: 320px;
   width: 100%;
+  @media screen and (min-width: 1920px) {
+    max-width: none;
+    width: 33.33%;
+    
+  }
 }
+
+// .prev-btn,
+// .next-btn {
+//   }
+
+.itc-slider-btn{
+  display: none;
+  
+    @media screen and (min-width: 1920px) {
+     
+      width: 48px;
+        height: 48px;
+        color: #fff;
+        text-align: center;
+        cursor: pointer;
+        /* background: #0003; */
+        border: none;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        // position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+}
+// .itc-slider-items{
+//   position: relative;
+// }
