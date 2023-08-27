@@ -10,7 +10,8 @@
 
 .surprise__title{
       @media screen and (min-width: 1920px) {
-    margin-bottom: 100px;}
+    // margin-bottom: 100px;
+  }
 }
 
 .surprise__card-background {
@@ -50,7 +51,7 @@
     
     @media screen and (min-width: 1920px){
   width: 480px;
-  padding-top: 45px;
+  // padding-top: 45px;
   }
 }
 
@@ -74,7 +75,7 @@ font-weight: 400;
 line-height: 19px; 
 letter-spacing: 0.32px;
 margin-top: 20px;
-margin-bottom:30px;
+// margin-bottom:30px;
 
 @media screen and (min-width: 1920px){
   font-size: 24px;
