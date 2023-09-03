@@ -2,34 +2,29 @@
   <div class="container">
     <h2 class="title assortment__title">Дивись наш асортимент</h2>
     <div class="assortment__card">
-      <ul class="assortment__btn-list">
-        <li>
-          <button class="assortment__btn">
+      <div class="assortment__btn-list tabs__links">
+         <a class="assortment__btn makaroon" href="#makaroon">
             <svg class="assortment__btn-icon">
               <use href="./images/symbol-defs.svg#icon-makaroon"></use>
             </svg>
             <p class="assortment__btn-title">макаронси</p>
-          </button>
-        </li>
-        <li>
-          <button class="assortment__btn">
+          </a>       
+          <a class="assortment__btn donut" href="#donut">
             <svg class="assortment__btn-icon">
               <use href="./images/symbol-defs.svg#icon-donut"></use>
             </svg>
             <p class="assortment__btn-title">пончики</p>
-          </button>
-        </li>
-        <li>
-          <button class="assortment__btn current">
+          </a>        
+          <a class="assortment__btn cupcake" href="#cupcake">
             <svg class="assortment__btn-icon">
               <use href="./images/symbol-defs.svg#icon-cupcake"></use>
             </svg>
             <p class="assortment__btn-title">капкейки</p>
-          </button>
-        </li>
-      </ul>
-
-      <div class="assortment__trend" >
+          </a>
+      
+      </div>
+<div class="tabs">
+      <div class="assortment__trend" id="cupcake">
         <div class="assortment__img-bg">
           <img
             class="assortment__trend-img"
@@ -38,7 +33,7 @@
           />
         </div>
 
-        <div class="assortment__trend-description">
+        <div class="assortment__trend-description" >
           <h3 class="assortment__trend-title">Капкейк з трюфелем та малиною</h3>
           <p class="assortment__trend-descr">
             Шоколадний бісквіт з начинкою з трюфеля, обгорнутий кремом з малини,
@@ -55,7 +50,63 @@
           </div>
         </div>
       </div>
+        <div class="assortment__trend" id="makaroon">
+        <div class="assortment__img-bg">
+          <img
+            class="assortment__trend-img"
+            src="./images/Macaroon.png"
+            alt="TruffleCake"
+          />
+        </div>
+
+        <div class="assortment__trend-description" >
+          <h3 class="assortment__trend-title">Макарон з лаймовою начинкою</h3>
+          <p class="assortment__trend-descr">
+            Макарон має ніжну та хрустку скоринку з легким цитрусовим ароматом. Начинка з лайма має свіжий та насичений смак, який робить цей макарон освіжаючим та легким.
+          </p>
+          <div class="assortment__btns">
+            <h4 class="assortment__trend-price">55,00 грн</h4>
+            <button class="assortment__btn-like">
+              <svg class="assortment__like-icon" width="48" height="48">
+                <use href="./images/symbol-defs.svg#icon-heart"></use>
+              </svg>
+            </button>
+            <button class="btn assortment__descr-btn">в кошик</button>
+          </div>
+        </div>
+      </div>
+        <div class="assortment__trend" id="donut" >
+        <div class="assortment__img-bg">
+          <img
+            class="assortment__trend-img"
+            src="./images/Donut.png"
+            alt="TruffleCake"
+          />
+        </div>
+
+        <div class="assortment__trend-description" >
+          <h3 class="assortment__trend-title">Пончик в шоколадній глазурі</h3>
+          <p class="assortment__trend-descr">
+            Пончик має м'яку та пухку текстуру, яка тане в роті. Щедра шоколадна глазур додає ще більше смаку та аромату.
+          </p>
+          <div class="assortment__btns">
+            <h4 class="assortment__trend-price">35,00 грн</h4>
+            <button class="assortment__btn-like">
+              <svg class="assortment__like-icon" width="48" height="48">
+                <use href="./images/symbol-defs.svg#icon-heart"></use>
+              </svg>
+            </button>
+            <button class="btn assortment__descr-btn">в кошик</button>
+          </div>
+        </div>
+      </div>
     </div>
+
+    </div>
+
+    
+
+    <!-- slider -->
     <div class="assortment__products " id="assortment">
     
       <div class="assortment__product-list itc-slider" data-slider="itc-slider">
